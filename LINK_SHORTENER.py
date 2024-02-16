@@ -53,3 +53,6 @@ if __name__ == "__main__":
         print(f"Ошибка значения: {e}")
     except requests.RequestException as e:
         print(f"Ошибка запроса: {e}")
+    except KeyError as e:
+        print(f"SOME_KEY: {e}")
+        
