@@ -38,14 +38,14 @@ def shorten_link(long_url, token):
 
 if __name__ == "__main__":
     load_dotenv()
-    bitli_token = os.environ('bitli_token')
+    BITLY_TOKEN = os.environ('bitly_token')
     url = input("Введите ссылку : ")
     try:
-        if is_bitlink(url, bitli_token):
-            click_count = count_clicks(urlparse(url).path, bitli_token)
+        if is_bitlink(url, BITLY_TOKEN):
+            click_count = count_clicks(urlparse(url).path, BITLY_TOKEN)
             print(f"Количество кликов по ссылке: {click_count}")
         else:
-            shortened_url = shorten_link(url, bitli_token)
+            shortened_url = shorten_link(url, BITLY_TOKEN)
             print("Сокращенная ссылка:", shortened_url)
     except FileNotFoundError as e:
         print(f"Файл не найден: {e}")
