@@ -13,7 +13,7 @@ Python 3.x
 (https://github.com/TimurBerdyyev/URL_BITLY.git)
 
 Перейдите в каталог с проектом:
-’’’ cd URL_BITLY ’’’
+``` cd URL_BITLY ```
 
 Установите необходимые библиотеки:
 pip install -r requirements.txt
