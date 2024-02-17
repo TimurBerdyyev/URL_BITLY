@@ -38,7 +38,7 @@ def shorten_link(long_url, token):
 
 if __name__ == "__main__":
     load_dotenv()
-    bitly_token = os.environ.get('BITLY_TOKEN')
+    bitly_token = os.environ['BITLY_TOKEN']
     url = input("Введите ссылку : ")
     try:
         if is_bitlink(url, bitly_token):
