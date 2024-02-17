@@ -22,11 +22,11 @@ Python 3.x
 #### Примеры запуска скриптов
 
 Запустить скрипт для работы с Bitly API:
-```python LINK_SHORTENER.py ```
+```python bitly_api_interaction.py ```
 создайте файл .env и поместите туда свой токен в переменную ```BITLY_TOKEN="your_bitly_token_here"```
 
 ##### Примеры использования программного API
-```from LINK_SHORTENER import is_bitlink, count_clicks, shorten_link```
+```from bitly_api_interaction import is_bitlink, count_clicks, shorten_link```
 
 Проверка битлинга:
 ```bitlink = "your_bitlink_here"```
