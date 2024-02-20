@@ -22,7 +22,7 @@ Python 3.x
 #### Примеры запуска скриптов
 
 Запустить скрипт для работы с Bitly API:
-```python bitly_api_interaction.py ```
+```python bitly_api_interaction.py <URL>```
 создайте файл .env и поместите туда свой токен в переменную ```BITLY_TOKEN="your_bitly_token_here"```
 
 ##### Примеры использования программного API
